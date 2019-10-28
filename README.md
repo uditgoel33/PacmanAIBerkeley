@@ -19,12 +19,12 @@ Team: Power-Rangerz
 
 The Aim of this project is to implement a Pac man Autonomous Agent that can play and compete in a tournament. Our agents where finally developed used A* heuristic graph search techniques and agents were tried to be build using techniques such as MDP with value iteration and Approximate Q Learning. 
 
-**2.Techniques Attempted**
-**2.1. MDP With Value Iteration **
+**2.Techniques Attempted
+2.1. MDP With Value Iteration**
 
 We build our agent based on Markov Decision Processes which used to find the optimal policy using value iterations algorithm. To build our model we created a grid of specific size and assigned rewards at specific positions in the grid according to their location and their properties like whether they carrying food or where they carrying capsule etc. 
 
-**2.1.1. Strategies Used ** 
+**2.1.1. Strategies Used** 
 
 •	To start we created a grid of specific width and length and the transitional probabilities where defined as being 1 if the action is legal and where considered as being 0 if the action of illegal. 
 •	We initialised a Q-value with all cells containing values zeroes. 
@@ -35,13 +35,13 @@ We build our agent based on Markov Decision Processes which used to find the opt
 •	 If agent captured certain amounts to pellets then the reward assigned on the cells which were closer to the home boundaries of much higher that any other cell which help the agent in navigating home when enough number of food pellets were eaten. 
 •	Discount values between 0.6 and 0.9 were tried to find the discount factor giving the optimal policy. 
 
-**2.1.2. Issues with This Strategy **
+**2.1.2. Issues with This Strategy**
 
 •	The agent found it hard to navigate in grid which had to food pellets, or capsules or ghosts, that is which had less rewards. So, we had to guide the agent using A* to cells where he can numerous cells with rewards that can help him find a good action.
 •	The agent found it hard to figure out alternative paths to goal and stuck to only path that made him get stuck in a loop. 
 •	We faced the issue of determine the optimal grid size that can help the agent take the best possible action because choosing a bigger grid size was making the agent take more than one second to select the action and making the grid size smaller was making the agent weak against teams having strong defensive agents.
 
-**2.1.3. Advantages of MDP **
+**2.1.3. Advantages of MDP**
 
 •	It can be used for Q-learning, SARSA or n-step TD Learning
 
@@ -49,8 +49,8 @@ We build our agent based on Markov Decision Processes which used to find the opt
 
 •	The most difficult part of this approach is assigning the rewards. 
 
-**2.2. Approximate Q-learning:**
- **2.2.1. Strategies Used**
+**2.2. Approximate Q-learning:
+ 2.2.1. Strategies Used**
 •	The approach was similar to the baseline team’s approach as we tried to get the best action according the set of features and weights. 
 •	The model was not able to learn the weights properly. We tried changing the discount factor and the learning rate to observe agent’s performance. 
 •	We tried to implement a greedy agent whose goal was to have as many food pellets as it can.
@@ -90,7 +90,7 @@ We have adopted concepts from Heuristic Search algorithms a agent using A* searc
 •	The agents were not very effective against enemies having strong defence.
 •	In order to keep a safe distance with the ghosts, the Pacman sometimes got stuck in the same place. 
 
-**2.3.4. Improvements **
+**2.3.4. Improvements**
 
 •	In order to improve the performance of our agents we made the defensive agent as being an agent which can turn offensive when there is no invader or if all the enemies are scared.
 •	Also, we decided to make the defensive agent offensive when there it is scared 
