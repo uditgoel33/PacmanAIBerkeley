@@ -1,7 +1,7 @@
 Pacman: Capture the Flag – Wiki     
 Team: Power-Rangerz
 
-**YouTube Link** : https://www.youtube.com/watch?v=QPIAh4Phl0s&feature=youtu.be
+
 
 **Table of Contest**
 1.Introduction
