@@ -1,7 +1,7 @@
 Pacman: Capture the Flag – Wiki     
 Team: Power-Rangerz
 
-
+Code: python pacman.py -r myTeam
 
 **Table of Contest**
 1.Introduction
